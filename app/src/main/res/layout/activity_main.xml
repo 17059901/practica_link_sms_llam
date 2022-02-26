@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFA4A4"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Teclea un dominio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+        android:id="@+id/btn_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Click"
+        android:backgroundTint="#9A6F30"/>
+
+    <EditText
+        android:id="@+id/num_tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el numero del destinatario"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_link"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un mensaje"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/num_tel"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensaje"
+        android:layout_centerHorizontal="true"
+        android:text="Enviar Mensaje"
+        android:backgroundTint="#9A6F30"/>
+
+
+    <EditText
+        android:id="@+id/marcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese un numero"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_enviar"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_llamar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/marcar"
+        android:layout_centerHorizontal="true"
+        android:text="Marcar ese numero"
+        android:backgroundTint="#9A6F30"/>
+
+</RelativeLayout>
